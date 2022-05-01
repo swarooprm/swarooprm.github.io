@@ -49,14 +49,33 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+	          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerf_supervision.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerf_supervision.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfsuper_start() {
+                  document.getElementById('nerfsuper_image').style.opacity = "1";
+                }
+
+                function nerfsuper_stop() {
+                  document.getElementById('nerfsuper_image').style.opacity = "0";
+                }
+                nerfsuper_stop()
+              </script>
+            </td>	
         <td style="padding:20px;width:75%;vertical-align:middle">
 							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>ACL A generalized novel framework for optimal sensor-controller connection design to guarantee a stable cps smart grid
+                <papertitle>A generalized novel framework for optimal sensor-controller connection design to guarantee a stable cps smart grid
               </papertitle>
               </a>
               <br>
-	      <strong>2022   Swaroop Mishra</strong>,  
+	      <strong>Swaroop Mishra</strong>,  
               <a href="">NV Srinath</a>, 
               <a href="">KM Preetam</a>, 
               <a href="">L Behera</a>,
