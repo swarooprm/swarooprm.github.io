@@ -6,7 +6,6 @@ const navItems = [
   { name: "Awards", href: "#awards" },
   { name: "Media", href: "#media" },
   { name: "Talks", href: "#talks" },
-  { name: "Experience", href: "#experience" },
 ];
 
 const Navigation = () => {
