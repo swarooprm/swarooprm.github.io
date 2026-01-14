@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
 import photoIlya from "@/assets/photo-ilya.jpeg";
+import photoBengio from "@/assets/photo-bengio.png";
 
 const photos = [
   {
@@ -13,7 +14,7 @@ const photos = [
     id: 2,
     caption: "With Yoshua Bengio",
     description: "Deep Learning Pioneer & Turing Award Winner",
-    image: null,
+    image: photoBengio,
   },
   {
     id: 3,
