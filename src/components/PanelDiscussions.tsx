@@ -28,7 +28,6 @@ const invitedTalks = [
   { name: "NIST Berhampur (2024)" },
   { name: "NIT Silchar (2025)" },
   { name: "GDG ASU (2025)", url: "https://gdg.community.dev/events/details/google-gdg-on-campus-arizona-state-university-tempe-united-states-presents-microsoft-ai-ex-google-deepmind-swaroop-mishra-guest-speaker-session/" },
-  { name: "AIMLC @ IIT Patna (2025)", url: "https://www.youtube.com/watch?v=2xO37noMm1w" },
 ];
 
 const PanelDiscussions = () => {
