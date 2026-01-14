@@ -25,7 +25,7 @@ const awards = [
   },
   {
     icon: Award,
-    title: "CEN-CS Outstanding Student 2022",
+    title: "CEN-CS Outstanding Student 2023",
     description: "<strong>1st in department</strong> recognition",
   },
   {
