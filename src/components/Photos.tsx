@@ -79,7 +79,7 @@ const Photos = () => {
                     <img
                       src={photo.image}
                       alt={photo.caption}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   ) : (
                     <div className="text-center p-8">
