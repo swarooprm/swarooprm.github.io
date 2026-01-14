@@ -4,6 +4,7 @@ import photoIlya from "@/assets/photo-ilya.jpeg";
 import photoBengio from "@/assets/photo-bengio.png";
 import photoYejin from "@/assets/photo-yejin.png";
 import photoSaraDanqi from "@/assets/photo-sara-danqi.png";
+import photoMit from "@/assets/photo-mit.png";
 
 const photos = [
   {
@@ -31,10 +32,16 @@ const photos = [
     image: photoYejin,
   },
   {
-    id: 6,
+    id: 5,
     caption: "With Sara Hooker & Danqi Chen",
     description: "ACL 2023 Panel Discussion",
     image: photoSaraDanqi,
+  },
+  {
+    id: 6,
+    caption: "At MIT",
+    description: "Invited Talk 2024",
+    image: photoMit,
   },
   {
     id: 7,
