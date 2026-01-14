@@ -6,11 +6,11 @@ const researchHighlights = [
     icon: Sparkles,
     headline: "Pioneered the Field",
     items: [
-      { label: "Pioneering work", text: "the first paper on instruction-tuning" },
+      { label: "Pioneering work", text: "The first paper on instruction-tuning" },
       { label: "Scaling", text: "Super-NaturalInstructions" },
       { label: "Applications", text: "Biomedical Instruction-tuning, Aspect Based Sentiment Analysis" },
-      { label: "Evaluation", text: "Instruction-following Evals, instruction-example equivalence" },
-      { label: "Bias", text: "instruction-bias" },
+      { label: "Evaluation", text: "Instruction-following Evals, Instruction-example equivalence" },
+      { label: "Bias", text: "Instruction-bias" },
     ],
     award: "EACL 2023 Outstanding Paper Award",
   },
@@ -19,7 +19,7 @@ const researchHighlights = [
     icon: Brain,
     headline: "Advancing AI Cognition",
     items: [
-      { label: "Methods", text: "reframing, question-decomposition, math via programs, help me think, learn to explain, take a step back, selective answering, summary of thought" },
+      { label: "Methods", text: "Reframing, Question-decomposition, Math via programs, Help me think, Learn to explain, Take a step back, Selective answering, Summary of thought" },
       { label: "Dataset", text: "NumGLUE, FeasibilityQA and TarGEN" },
     ],
   },
@@ -39,7 +39,7 @@ const researchHighlights = [
     headline: "Shaping Google's AI",
     items: [
       { label: "Innovation", text: "User-friendly and controllable LLMs for structured thoughts and personalized model responses" },
-      { label: "Patents", text: "Other patented works on LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference" },
+      { label: "Patents", text: "Several patented works on LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference" },
     ],
   },
 ];
