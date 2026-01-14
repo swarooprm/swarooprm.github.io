@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
 import photoIlya from "@/assets/photo-ilya.jpeg";
 import photoBengio from "@/assets/photo-bengio.png";
+import photoYejin from "@/assets/photo-yejin.png";
 
 const photos = [
   {
@@ -24,12 +25,18 @@ const photos = [
   },
   {
     id: 4,
+    caption: "With Yejin Choi",
+    description: "MacArthur Fellow & AI Researcher",
+    image: photoYejin,
+  },
+  {
+    id: 5,
     caption: "With Quoc Le",
     description: "Google Research Scientist",
     image: null,
   },
   {
-    id: 5,
+    id: 6,
     caption: "Interviewing Jeff Dean",
     description: "Odisha AI Conference 2024",
     image: null,
