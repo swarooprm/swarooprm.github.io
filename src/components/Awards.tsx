@@ -4,34 +4,34 @@ const awards = [
   {
     icon: Medal,
     title: "GDM Impact Award 2025",
-    description: "Silver medal contribution at IMO 2024",
+    description: "<strong>Silver medal</strong> contribution at <strong>IMO 2024</strong>",
     highlight: true,
   },
   {
     icon: Trophy,
     title: "AI2 Lasting Impact Paper Award",
-    description: "Natural Instructions - 3.5 years after publication",
+    description: "<strong>Natural Instructions</strong> - 3.5 years after publication",
     highlight: true,
   },
   {
     icon: Star,
     title: "Odia Bhasa Samman 2025",
-    description: "Odia Language Award recognition",
+    description: "<strong>Odia Language Award</strong> recognition",
   },
   {
     icon: GraduationCap,
     title: "Dean's Dissertation Award 2023",
-    description: "1st in school for PhD at ASU",
+    description: "<strong>1st in school</strong> for PhD at <strong>ASU</strong>",
   },
   {
     icon: Award,
     title: "CEN-CS Outstanding Student 2022",
-    description: "1st in department recognition",
+    description: "<strong>1st in department</strong> recognition",
   },
   {
     icon: Trophy,
     title: "EACL 2023 Outstanding Paper",
-    description: "Research on instruction-bias",
+    description: "Research on <strong>instruction-bias</strong>",
   },
 ];
 
@@ -66,7 +66,7 @@ const Awards = () => {
                 />
               </div>
               <h3 className="font-semibold text-foreground mb-2">{award.title}</h3>
-              <p className="text-muted-foreground text-sm">{award.description}</p>
+              <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: award.description }} />
               {award.highlight && (
                 <div className="absolute top-4 right-4">
                   <span className="px-2 py-1 bg-primary/20 text-primary text-xs font-medium rounded">
