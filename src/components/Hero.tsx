@@ -31,7 +31,7 @@ const Hero = () => {
                 Research Scientist @ Google DeepMind
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-                Pioneering instruction-tuning research. Contributed to Gemini's <span className="text-primary font-medium">IMO 2024 Silver Medal</span> alongside AlphaProof & AlphaGeometry. 15+ years across pre-training, post-training, reasoning, and agent development.
+                Pioneering <strong className="text-foreground">instruction-tuning</strong> research. Contributed to <strong className="text-foreground">Gemini's IMO 2024 Silver Medal</strong> alongside <strong className="text-foreground">AlphaProof & AlphaGeometry</strong>. 15+ years across <strong className="text-foreground">pre-training</strong>, <strong className="text-foreground">post-training</strong>, <strong className="text-foreground">reasoning</strong>, and <strong className="text-foreground">agent development</strong>.
               </p>
             </div>
 
