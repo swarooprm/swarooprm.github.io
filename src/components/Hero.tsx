@@ -3,10 +3,12 @@ import { ArrowDown, ExternalLink, Mail, Linkedin, Twitter, BookOpen } from "luci
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden px-6 py-20">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+      {/* Vibrant multicolor gradient background like profile photo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-200/40 via-purple-200/30 to-pink-200/40" />
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-teal-300/20 via-transparent to-rose-300/20" />
+      <div className="absolute top-1/4 right-1/3 w-[500px] h-[500px] bg-gradient-to-br from-cyan-400/30 to-blue-400/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-gradient-to-br from-purple-400/25 to-pink-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/2 right-1/4 w-[350px] h-[350px] bg-gradient-to-br from-rose-400/20 to-orange-300/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "4s" }} />
       
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
