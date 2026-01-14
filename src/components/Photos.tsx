@@ -1,36 +1,37 @@
 import { useState, useEffect } from "react";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
+import photoIlya from "@/assets/photo-ilya.jpeg";
 
 const photos = [
   {
     id: 1,
     caption: "With Geoffrey Hinton",
     description: "AI Pioneer & Turing Award Winner",
-    placeholder: "Photo with Geoff Hinton",
+    image: null,
   },
   {
     id: 2,
     caption: "With Yoshua Bengio",
     description: "Deep Learning Pioneer & Turing Award Winner",
-    placeholder: "Photo with Yoshua Bengio",
+    image: null,
   },
   {
     id: 3,
     caption: "With Ilya Sutskever",
     description: "Co-founder of OpenAI",
-    placeholder: "Photo with Ilya Sutskever",
+    image: photoIlya,
   },
   {
     id: 4,
     caption: "With Quoc Le",
     description: "Google Research Scientist",
-    placeholder: "Photo with Quoc Le",
+    image: null,
   },
   {
     id: 5,
     caption: "Interviewing Jeff Dean",
     description: "Odisha AI Conference 2024",
-    placeholder: "Interviewing Jeff Dean",
+    image: null,
   },
 ];
 
@@ -74,11 +75,19 @@ const Photos = () => {
                   key={photo.id}
                   className="min-w-full h-full flex items-center justify-center"
                 >
-                  <div className="text-center p-8">
-                    <Camera className="w-16 h-16 text-primary/40 mx-auto mb-4" />
-                    <p className="text-muted-foreground text-lg">{photo.placeholder}</p>
-                    <p className="text-muted-foreground/60 text-sm mt-2">Upload photo to display</p>
-                  </div>
+                  {photo.image ? (
+                    <img
+                      src={photo.image}
+                      alt={photo.caption}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-center p-8">
+                      <Camera className="w-16 h-16 text-primary/40 mx-auto mb-4" />
+                      <p className="text-muted-foreground text-lg">{photo.caption}</p>
+                      <p className="text-muted-foreground/60 text-sm mt-2">Upload photo to display</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
