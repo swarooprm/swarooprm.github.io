@@ -23,6 +23,13 @@ const mediaItems = [
     url: "https://www.facebook.com/thesakalanews/videos/792737619680539/",
   },
   {
+    icon: Video,
+    type: "Interview",
+    title: "Kanak News Interview",
+    description: "Media coverage and interview",
+    url: "#",
+  },
+  {
     icon: Mic,
     type: "Podcast",
     title: "NIST Podcast",
@@ -42,6 +49,41 @@ const mediaItems = [
     title: "My Journey",
     description: "Personal AI journey",
     url: "https://www.youtube.com/watch?v=4wrYfIZ8TYU",
+  },
+  {
+    icon: Newspaper,
+    type: "Article",
+    title: "The Making of a Scientist",
+    description: "From Classroom Rebel to AI Innovator",
+    url: "#",
+  },
+  {
+    icon: Mic,
+    type: "Podcast",
+    title: "Research Paper Guide - Part 1",
+    description: "How to get started on a Research Paper",
+    url: "#",
+  },
+  {
+    icon: Mic,
+    type: "Podcast",
+    title: "Research Paper Guide - Part 2",
+    description: "How to get started on a Research Paper",
+    url: "#",
+  },
+  {
+    icon: Mic,
+    type: "Podcast",
+    title: "1CW Podcast",
+    description: "Ones Changing The World",
+    url: "#",
+  },
+  {
+    icon: Video,
+    type: "Mention",
+    title: "Neem Karoli Baba Podcast",
+    description: "Mentioned by Vishal Gondal",
+    url: "#",
   },
 ];
 
