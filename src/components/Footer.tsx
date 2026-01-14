@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Awards", href: "#awards" },
   { name: "Media", href: "#media" },
   { name: "Talks", href: "#talks" },
-  { name: "Experience", href: "#experience" },
+  { name: "Photos", href: "#photos" },
 ];
 
 const Footer = () => {
@@ -65,18 +65,6 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Swaroop Mishra. All rights reserved.
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Co-organizer of{" "}
-            <a
-              href="https://mathai2024.github.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              MATH-AI workshop
-            </a>{" "}
-            at NeurIPS 2022 & 2024
           </p>
         </div>
       </div>
