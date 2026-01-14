@@ -8,10 +8,12 @@ const panelDiscussions = [
 ];
 
 const invitedTalks = [
-  "MIT (2024)", "Stanford (2022)", "IIT Kharagpur (2023)", "IIT Kanpur (2021)",
-  "Google Research (2022)", "Microsoft Research (2022)", "Facebook AI (2022)",
-  "Allen AI (2021)", "Intel (2023)", "Oracle Research (2023)",
-  "IIT Mandi (2024)", "IIT Bhubaneswar (2024)", "University of Toronto (2022)",
+  "Allen AI (2021)", "IIT Kanpur (2021)", "University of Toronto (2022)", 
+  "Google Research (2022)", "Facebook AI Research (2022)", "Microsoft Research (2022)", 
+  "Stanford (2022)", "Intel (2023)", "IIT Kharagpur (2023)", "Oracle Research (2023)",
+  "Silicon Bhubaneswar (2023)", "MIT (2024)", "IIT Mandi (2024)", "IIT Bhubaneswar (2024)",
+  "KIIT Bhubaneswar (2024)", "Xavier University Bhubaneswar (2024)", "NIST Berhampur (2024)",
+  "NIT Silchar (2025)",
 ];
 
 const PanelDiscussions = () => {
