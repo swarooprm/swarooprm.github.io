@@ -11,40 +11,47 @@ const researchData: ResearchItem[] = [
     category: "Instruction-tuning",
     title: "Pioneering Work",
     papers: [
-      { name: "First paper on instruction-tuning", url: "#" },
-      { name: "Super-NaturalInstructions (Scaling)", url: "#" },
-      { name: "Biomedical Instruction-tuning", url: "#" },
-      { name: "Aspect Based Sentiment Analysis", url: "#" },
-    ],
-  },
-  {
-    category: "Evaluation & Bias",
-    title: "Methods & Metrics",
-    papers: [
-      { name: "Instruction-following Evals", url: "#" },
-      { name: "Instruction-example equivalence", url: "#" },
-      { name: "Instruction-bias", note: "EACL 2023 Outstanding Paper Award", url: "#" },
+      { name: "First paper on instruction-tuning", url: "https://aclanthology.org/2022.acl-long.244.pdf" },
+      { name: "Super-NaturalInstructions (Scaling)", url: "https://aclanthology.org/2022.emnlp-main.340.pdf" },
+      { name: "Biomedical Instruction-tuning", url: "https://aclanthology.org/2022.findings-naacl.10.pdf" },
+      { name: "Aspect Based Sentiment Analysis", url: "https://aclanthology.org/2024.naacl-short.63/" },
+      { name: "Instruction-following Evals", url: "https://arxiv.org/pdf/2311.07911" },
+      { name: "Instruction-example equivalence", url: "https://aclanthology.org/2023.findings-eacl.77.pdf" },
+      { name: "Instruction-bias", note: "EACL 2023 Outstanding Paper Award", url: "https://aclanthology.org/2023.eacl-main.130/" },
     ],
   },
   {
     category: "Reasoning",
     title: "Methods & Datasets",
     papers: [
-      { name: "Reframing", url: "#" },
-      { name: "Question-decomposition", url: "#" },
-      { name: "Math via programs", url: "#" },
-      { name: "Help me think, Learn to explain", url: "#" },
-      { name: "Selective answering", url: "#" },
-      { name: "NumGLUE, FeasibilityQA, TarGEN", url: "#" },
+      { name: "Reframing", url: "https://aclanthology.org/2022.findings-acl.50.pdf" },
+      { name: "Question-decomposition", url: "https://aclanthology.org/2022.emnlp-main.302/" },
+      { name: "Math via programs", url: "https://aclanthology.org/2022.emnlp-main.392/" },
+      { name: "Help me think", url: "https://aclanthology.org/2023.findings-acl.751.pdf" },
+      { name: "Learn to explain", url: "https://proceedings.neurips.cc/paper_files/paper/2022/file/11332b6b6cf4485b84afadb1352d3a9a-Paper-Conference.pdf" },
+      { name: "Take a step back", url: "https://openreview.net/pdf?id=3bq3jsvcQ1" },
+      { name: "Selective answering", url: "https://aclanthology.org/2022.findings-acl.158/" },
+      { name: "Summary of thought", url: "https://aclanthology.org/2022.emnlp-main.301/" },
+      { name: "NumGLUE", url: "https://aclanthology.org/2022.acl-long.246.pdf" },
+      { name: "FeasibilityQA", url: "https://aclanthology.org/2023.eacl-main.30.pdf" },
+      { name: "TarGEN", url: "https://openreview.net/pdf?id=gpgMRWgv9Q" },
     ],
   },
   {
     category: "Self-Improvement",
     title: "Training & Evaluation",
     papers: [
-      { name: "Self-Instruct (Training Method)", url: "#" },
-      { name: "Self-Discover", url: "#" },
-      { name: "Self-Correction Limitations", url: "#" },
+      { name: "Self-Instruct (Training Method)", url: "https://aclanthology.org/2023.acl-long.754/" },
+      { name: "Self-Discover (Evaluation Method)", url: "https://arxiv.org/pdf/2402.03620" },
+      { name: "Self-Correction Limitations", url: "https://openreview.net/pdf?id=IkmD3fKBPQ" },
+    ],
+  },
+  {
+    category: "Products & Beyond",
+    title: "Applications",
+    papers: [
+      { name: "User-friendly and controllable LLMs for structured thoughts and personalized model responses", url: "https://dl.acm.org/doi/10.1145/3613905.3651093" },
+      { name: "Other patented works at Google focused on LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference" },
     ],
   },
 ];
@@ -56,7 +63,7 @@ const Research = () => {
         <div className="mb-16">
           <p className="text-primary text-sm tracking-widest uppercase mb-3">Research</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Key Contributions
+            Main Research Contributions
           </h2>
         </div>
 
@@ -78,35 +85,32 @@ const Research = () => {
               <ul className="space-y-2">
                 {item.papers.map((paper) => (
                   <li key={paper.name}>
-                    <a
-                      href={paper.url}
-                      className="link-highlight text-muted-foreground hover:text-foreground text-sm flex items-start gap-2"
-                    >
-                      <ExternalLink className="w-3 h-3 mt-1 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <span>
-                        {paper.name}
-                        {paper.note && (
-                          <span className="ml-2 text-xs text-primary">({paper.note})</span>
-                        )}
+                    {paper.url ? (
+                      <a
+                        href={paper.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-highlight text-muted-foreground hover:text-foreground text-sm flex items-start gap-2"
+                      >
+                        <ExternalLink className="w-3 h-3 mt-1 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span>
+                          {paper.name}
+                          {paper.note && (
+                            <span className="ml-2 text-xs text-primary">({paper.note})</span>
+                          )}
+                        </span>
+                      </a>
+                    ) : (
+                      <span className="text-muted-foreground text-sm flex items-start gap-2">
+                        <span className="w-3 h-3 mt-1 flex-shrink-0" />
+                        <span>{paper.name}</span>
                       </span>
-                    </a>
+                    )}
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Products Section */}
-        <div className="mt-12 card-glass rounded-xl p-8">
-          <h3 className="font-display text-xl font-semibold text-foreground mb-4">
-            New Products and Beyond
-          </h3>
-          <p className="text-muted-foreground leading-relaxed">
-            User-friendly and controllable LLMs for structured thoughts and personalized model responses, 
-            and other patented works at Google focused on LLM Reasoning, Scaling, Post-Training, 
-            Self-Improvement and Inference.
-          </p>
         </div>
       </div>
     </section>
