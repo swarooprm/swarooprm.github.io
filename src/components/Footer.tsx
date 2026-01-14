@@ -1,17 +1,20 @@
-import { Github, Linkedin, Twitter, Mail, BookOpen } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, BookOpen, Instagram, Facebook } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/swarooprm", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/swaroopsmishra", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com/saborni", label: "Twitter" },
-  { icon: BookOpen, href: "https://scholar.google.com", label: "Google Scholar" },
-  { icon: Mail, href: "mailto:contact@swaroopmishra.com", label: "Email" },
+  { icon: Twitter, href: "https://twitter.com/Swarooprm7", label: "Twitter" },
+  { icon: Mail, href: "mailto:swaroopranjanmishra@gmail.com", label: "Email" },
+  { icon: BookOpen, href: "https://scholar.google.co.in/citations?user=-7LK2SwAAAAJ&hl=en", label: "Google Scholar" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/swarooprm7", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/swarooprm7", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/swaroopranjan.mishra", label: "Facebook" },
 ];
 
 const navLinks = [
   { name: "Research", href: "#research" },
   { name: "Awards", href: "#awards" },
   { name: "Media", href: "#media" },
+  { name: "Talks", href: "#talks" },
+  { name: "Experience", href: "#experience" },
 ];
 
 const Footer = () => {
@@ -30,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Nav Links */}
-          <nav className="flex gap-6">
+          <nav className="flex flex-wrap gap-4 md:gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -43,7 +46,7 @@ const Footer = () => {
           </nav>
 
           {/* Social Links */}
-          <div className="flex gap-4">
+          <div className="flex gap-3">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -66,10 +69,10 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             Co-organizer of{" "}
             <a
-              href="#"
-              className="text-primary hover:underline"
+              href="https://mathai2024.github.io/"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-primary hover:underline"
             >
               MATH-AI workshop
             </a>{" "}

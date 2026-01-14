@@ -5,6 +5,8 @@ const navItems = [
   { name: "Research", href: "#research" },
   { name: "Awards", href: "#awards" },
   { name: "Media", href: "#media" },
+  { name: "Talks", href: "#talks" },
+  { name: "Experience", href: "#experience" },
 ];
 
 const Navigation = () => {
@@ -22,7 +24,7 @@ const Navigation = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : ""
+        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm" : ""
       }`}
     >
       <nav className="container max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -42,7 +44,7 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="mailto:contact@swaroopmishra.com"
+            href="mailto:swaroopranjanmishra@gmail.com"
             className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors"
           >
             Contact
@@ -74,7 +76,7 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="mailto:contact@swaroopmishra.com"
+              href="mailto:swaroopranjanmishra@gmail.com"
               className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors text-center"
             >
               Contact
