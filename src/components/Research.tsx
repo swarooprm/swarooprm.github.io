@@ -5,29 +5,42 @@ const researchHighlights = [
     category: "Instruction-Tuning",
     icon: Sparkles,
     headline: "Pioneered the Field",
-    description: "Authored the **first paper on instruction-tuning**, scaled with **Super-NaturalInstructions**, and received the **EACL 2023 Outstanding Paper Award**.",
-    papers: ["Natural Instructions", "Super-NaturalInstructions", "Biomedical Instruction-tuning"],
+    items: [
+      { label: "Pioneering work", text: "the first paper on instruction-tuning" },
+      { label: "Scaling", text: "Super-NaturalInstructions" },
+      { label: "Applications", text: "Biomedical Instruction-tuning, Aspect Based Sentiment Analysis" },
+      { label: "Evaluation", text: "Instruction-following Evals, instruction-example equivalence" },
+      { label: "Bias", text: "instruction-bias" },
+    ],
+    award: "EACL 2023 Outstanding Paper Award",
   },
   {
     category: "Reasoning",
     icon: Brain,
     headline: "Advancing AI Cognition",
-    description: "Developed **question decomposition** techniques, math reasoning via programs, and the influential **Take a Step Back** prompting method.",
-    papers: ["Reframing", "Question Decomposition", "Take a Step Back", "NumGLUE"],
+    items: [
+      { label: "Methods", text: "reframing, question-decomposition, math via programs, help me think, learn to explain, take a step back, selective answering, summary of thought" },
+      { label: "Dataset", text: "NumGLUE, FeasibilityQA and TarGEN" },
+    ],
   },
   {
     category: "Self-Improvement",
     icon: Zap,
     headline: "Teaching AI to Evolve",
-    description: "Created **Self-Instruct** for autonomous training, **Self-Discover** for evaluation, and groundbreaking research on **Self-Correction** limitations.",
-    papers: ["Self-Instruct", "Self-Discover", "Self-Correction Studies"],
+    items: [
+      { label: "Training Method", text: "Self-Instruct" },
+      { label: "Evaluation Method", text: "Self-Discover" },
+      { label: "Limitation", text: "Self-Correction Limitations" },
+    ],
   },
   {
     category: "Products & Patents",
     icon: Rocket,
     headline: "Shaping Google's AI",
-    description: "Multiple **patents** powering **LLM Reasoning**, **Scaling**, **Post-Training**, **Self-Improvement**, and **Inference** innovations at Google.",
-    papers: ["User-friendly LLMs", "Structured Thoughts", "Personalized Responses"],
+    items: [
+      { label: "Innovation", text: "User-friendly and controllable LLMs for structured thoughts and personalized model responses" },
+      { label: "Patents", text: "Other patented works on LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference" },
+    ],
   },
 ];
 
@@ -57,21 +70,22 @@ const Research = () => {
                 </span>
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-3">{item.headline}</h3>
+              <h3 className="text-xl font-bold text-foreground mb-4">{item.headline}</h3>
               
-              <p className="text-muted-foreground mb-5 text-sm leading-relaxed"
-                dangerouslySetInnerHTML={{
-                  __html: item.description.replace(/\*\*(.*?)\*\*/g, '<strong class="text-foreground font-semibold">$1</strong>')
-                }}
-              />
-              
-              <div className="flex flex-wrap gap-2">
-                {item.papers.map((paper) => (
-                  <span key={paper} className="text-xs text-foreground/80 bg-secondary/80 px-3 py-1.5 rounded-full border border-border/50">
-                    {paper}
-                  </span>
+              <div className="space-y-3 mb-4">
+                {item.items.map((entry, idx) => (
+                  <div key={idx} className="text-sm">
+                    <span className="text-primary font-semibold">{entry.label}:</span>{" "}
+                    <span className="text-muted-foreground">{entry.text}</span>
+                  </div>
                 ))}
               </div>
+
+              {item.award && (
+                <div className="mt-4 px-3 py-2 bg-primary/10 rounded-lg border border-primary/20">
+                  <span className="text-xs text-primary font-medium">🏆 {item.award}</span>
+                </div>
+              )}
             </div>
           ))}
         </div>
