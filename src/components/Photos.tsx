@@ -3,6 +3,7 @@ import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
 import photoIlya from "@/assets/photo-ilya.jpeg";
 import photoBengio from "@/assets/photo-bengio.png";
 import photoYejin from "@/assets/photo-yejin.png";
+import photoSaraDanqi from "@/assets/photo-sara-danqi.png";
 
 const photos = [
   {
@@ -30,13 +31,19 @@ const photos = [
     image: photoYejin,
   },
   {
-    id: 5,
+    id: 6,
+    caption: "With Sara Hooker & Danqi Chen",
+    description: "ACL 2023 Panel Discussion",
+    image: photoSaraDanqi,
+  },
+  {
+    id: 7,
     caption: "With Quoc Le",
     description: "Google Research Scientist",
     image: null,
   },
   {
-    id: 6,
+    id: 8,
     caption: "Interviewing Jeff Dean",
     description: "Odisha AI Conference 2024",
     image: null,
