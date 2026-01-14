@@ -5,78 +5,43 @@ const mediaItems = [
     icon: Newspaper,
     type: "Press",
     title: "The New York Times",
-    description: "Coverage of IMO-Silver achievement (group photo in article)",
+    description: "IMO-Silver achievement coverage",
     url: "https://www.nytimes.com/2024/07/25/science/ai-math-alphaproof-deepmind.html",
-  },
-  {
-    icon: Video,
-    type: "Interview",
-    title: "Popular Local Media Interview",
-    description: "Discussion on AI and career journey",
-    url: "https://www.facebook.com/thesakalanews/videos/792737619680539/",
-  },
-  {
-    icon: Video,
-    type: "Interview",
-    title: "Kanak News Interview",
-    description: "TV interview discussion",
-    url: "https://www.youtube.com/watch?v=ruJ39ylIZ3k",
-  },
-  {
-    icon: Newspaper,
-    type: "Article",
-    title: "The Making of a Scientist",
-    description: "From Classroom Rebel to AI Innovator",
-    url: "https://www.linkedin.com/pulse/making-scientist-from-classroom-rebel-ai-innovator-swaroop-nayak-2cf5c",
-  },
-  {
-    icon: Mic,
-    type: "Podcast",
-    title: "Research Paper Guide",
-    description: "How to get started on a Research Paper - Part 1 & 2",
-    url: "https://www.youtube.com/watch?v=Zvg6FNbLvoY",
-  },
-  {
-    icon: Mic,
-    type: "Podcast",
-    title: "Technical Deep Dive",
-    description: "Instruction Tuning, Prompt Engineering, & Self Improving LLMs",
-    url: "https://www.youtube.com/watch?v=pRB9KgcWdd4",
-  },
-  {
-    icon: Mic,
-    type: "Podcast",
-    title: "NIST Podcast Series",
-    description: "Powering ChatGPT, Gemini & LLMs: Insights from Dr. Swaroop Mishra",
-    url: "https://www.youtube.com/watch?v=ZJdqS25bOhU",
-  },
-  {
-    icon: Video,
-    type: "Video",
-    title: "My Journey",
-    description: "Personal and professional journey in AI",
-    url: "https://www.youtube.com/watch?v=4wrYfIZ8TYU",
-  },
-  {
-    icon: Mic,
-    type: "Podcast",
-    title: "1CW Podcast",
-    description: "Ones Changing The World podcast episode",
-    url: "https://www.youtube.com/watch?v=Cj3Xx3CanxM",
   },
   {
     icon: Users,
     type: "Interview",
     title: "Interviewing Jeff Dean",
-    description: "Swaroop interviewing Jeff Dean at Odisha AI Conference 2024",
+    description: "Odisha AI Conference 2024",
     url: "https://www.youtube.com/watch?v=u47fGmDOyms",
+  },
+  {
+    icon: Video,
+    type: "Interview",
+    title: "Local Media Coverage",
+    description: "AI and career journey",
+    url: "https://www.facebook.com/thesakalanews/videos/792737619680539/",
   },
   {
     icon: Mic,
     type: "Podcast",
-    title: "Neem Karoli Baba Podcast",
-    description: "Mentioned by Vishal Gondal on the podcast",
-    url: "https://www.youtube.com/watch?v=Bopaln7beqw",
+    title: "NIST Podcast",
+    description: "Powering ChatGPT, Gemini & LLMs",
+    url: "https://www.youtube.com/watch?v=ZJdqS25bOhU",
+  },
+  {
+    icon: Mic,
+    type: "Podcast",
+    title: "Technical Deep Dive",
+    description: "Instruction Tuning & Self-Improving LLMs",
+    url: "https://www.youtube.com/watch?v=pRB9KgcWdd4",
+  },
+  {
+    icon: Video,
+    type: "Video",
+    title: "My Journey",
+    description: "Personal AI journey",
+    url: "https://www.youtube.com/watch?v=4wrYfIZ8TYU",
   },
 ];
 
@@ -87,7 +52,7 @@ const Media = () => {
         <div className="mb-16">
           <p className="text-primary text-sm tracking-widest uppercase mb-3">Press & Talks</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Selected Media Coverage
+            Selected Media
           </h2>
         </div>
 
@@ -111,7 +76,7 @@ const Media = () => {
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors truncate">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground text-sm line-clamp-2">{item.description}</p>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </div>
             </a>
           ))}

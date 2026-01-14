@@ -5,8 +5,8 @@ const Hero = () => {
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden px-6 py-20">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
       
       <div className="container max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
@@ -27,41 +27,28 @@ const Hero = () => {
             </h1>
             
             <div className="animate-fade-up-delay-1">
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
-                I have been involved in the full development lifecycle of language models for several years, encompassing{" "}
-                <span className="text-primary font-medium">pre-training</span>,{" "}
-                <span className="text-primary font-medium">post-training</span>,{" "}
-                <span className="text-primary font-medium">data quality</span>,{" "}
-                <span className="text-primary font-medium">human data collection</span>,{" "}
-                <span className="text-primary font-medium">instruction following</span>,{" "}
-                <span className="text-primary font-medium">reasoning capabilities</span>,{" "}
-                <span className="text-primary font-medium">model architecture design</span>, and{" "}
-                <span className="text-primary font-medium">agent development</span>.
+              <p className="text-lg md:text-xl text-primary font-medium mb-3">
+                Research Scientist @ Google DeepMind
               </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
-                Over the last 15+ years, my research experience has spanned more than 10 industries and research institutions across various roles, including research scientist, software engineer, and technical consultant.
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+                Pioneering instruction-tuning research. Contributed to Gemini's <span className="text-primary font-medium">IMO 2024 Silver Medal</span> alongside AlphaProof & AlphaGeometry. 15+ years across pre-training, post-training, reasoning, and agent development.
               </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-                I was a Research Scientist at{" "}
-                <a href="https://www.deepmind.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  Google DeepMind (Ex-Google Brain)
-                </a>, where I worked on Gemini reasoning. I built a System that got some crucial points in the{" "}
-                <a href="https://www.imo2024.uk/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  International Mathematical Olympiad (IMO) 2024
-                </a>{" "}
-                and critically contributed to our{" "}
-                <a href="https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-                  Silver Medal
-                </a>{" "}
-                along with AlphaProof and{" "}
-                <a href="https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  AlphaGeometry
-                </a>. I also co-led reasoning research that contributed to various successful launches SOTA Gemini model including the popular{" "}
-                <a href="https://io.google/2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  Google IO 2024
-                </a>{" "}
-                launch. Most of my patented works at Google revolves around LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference.
-              </p>
+            </div>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 justify-center md:justify-start mb-6 animate-fade-up-delay-1">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-foreground">15+</div>
+                <div className="text-xs text-muted-foreground">Years Research</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-foreground">10+</div>
+                <div className="text-xs text-muted-foreground">Institutions</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-foreground">50+</div>
+                <div className="text-xs text-muted-foreground">Publications</div>
+              </div>
             </div>
 
             {/* Social Links */}
@@ -89,7 +76,7 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 border border-border text-foreground text-sm font-medium rounded-lg hover:bg-secondary transition-all duration-300"
               >
                 <BookOpen className="w-4 h-4" />
-                Google Scholar
+                Scholar
               </a>
               <a
                 href="https://www.linkedin.com/in/swarooprm7"
