@@ -44,18 +44,6 @@ const photos = [
     description: "Invited Talk 2024",
     image: photoMit,
   },
-  {
-    id: 7,
-    caption: "With Quoc Le",
-    description: "Google Research Scientist",
-    image: null,
-  },
-  {
-    id: 8,
-    caption: "Interviewing Jeff Dean",
-    description: "Odisha AI Conference 2024",
-    image: null,
-  },
 ];
 
 const Photos = () => {
