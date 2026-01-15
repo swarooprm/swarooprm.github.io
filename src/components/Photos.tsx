@@ -5,13 +5,14 @@ import photoBengio from "@/assets/photo-bengio.png";
 import photoYejin from "@/assets/photo-yejin.png";
 import photoSaraDanqi from "@/assets/photo-sara-danqi.png";
 import photoMit from "@/assets/photo-mit.png";
+import photoHinton from "@/assets/photo-hinton.png";
 
 const photos = [
   {
     id: 1,
     caption: "With Geoffrey Hinton",
     description: "AI Pioneer & Turing Award Winner",
-    image: null,
+    image: photoHinton,
   },
   {
     id: 2,
