@@ -49,6 +49,9 @@ const photos = [
 const Photos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Ensure currentIndex is within bounds
+  const safeIndex = Math.min(currentIndex, photos.length - 1);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % photos.length);
@@ -79,7 +82,7 @@ const Photos = () => {
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 to-secondary aspect-[16/9] md:aspect-[21/9]">
             <div 
               className="flex transition-transform duration-500 ease-out h-full"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              style={{ transform: `translateX(-${safeIndex * 100}%)` }}
             >
               {photos.map((photo) => (
                 <div
@@ -123,10 +126,10 @@ const Photos = () => {
           {/* Caption */}
           <div className="mt-6 text-center">
             <h3 className="text-xl font-semibold text-foreground">
-              {photos[currentIndex].caption}
+              {photos[safeIndex].caption}
             </h3>
             <p className="text-muted-foreground text-sm mt-1">
-              {photos[currentIndex].description}
+              {photos[safeIndex].description}
             </p>
           </div>
 
@@ -137,7 +140,7 @@ const Photos = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex
+                  index === safeIndex
                     ? "bg-primary w-6"
                     : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                 }`}
