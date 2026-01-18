@@ -26,8 +26,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Navigate to Build Directory
-        run: cd dist
+      - name: List build output
+        run: ls -la dist
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
