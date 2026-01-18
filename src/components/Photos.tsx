@@ -11,7 +11,7 @@ const photos = [
   {
     id: 1,
     caption: "With Geoffrey Hinton",
-    description: "AI Pioneer & Turing Award Winner",
+    description: "AI Pioneer, Turing Award & Nobel Prize Winner",
     image: photoHinton,
   },
   {
