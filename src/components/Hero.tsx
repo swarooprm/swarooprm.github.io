@@ -1,4 +1,5 @@
 import { ArrowDown, ExternalLink, Mail, Linkedin, Twitter, BookOpen, Instagram, Facebook } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-fade-up">
             <img
-              src="https://swarooprm.github.io/images/dp_circle3.jpeg"
+              src={profilePhoto}
               alt="Swaroop Mishra"
               className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary/20 shadow-lg"
             />
