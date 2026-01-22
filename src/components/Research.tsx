@@ -36,7 +36,7 @@ const researchHighlights = [
   {
     category: "Products & Patents",
     icon: Rocket,
-    headline: "Building nextgen product",
+    headline: "Building Nextgen Product",
     items: [
       { label: "Innovation", text: "User-friendly and controllable LLMs for structured thoughts and personalized model responses" },
       { label: "Patents", text: "Several patented works on LLM Reasoning, Scaling, Post-Training, Self-Improvement and Inference" },
