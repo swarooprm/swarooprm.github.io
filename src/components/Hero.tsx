@@ -31,7 +31,7 @@ const Hero = () => {
             
             <div className="animate-fade-up-delay-1">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-                Pioneer of <strong className="text-foreground">instruction-tuning</strong> through the <strong className="text-foreground">"Natural Instructions"</strong> paper. Built the model powering the <strong className="text-foreground">IMO 2024 Silver Medal</strong> performance and the foundational technology behind <strong className="text-foreground">Gemini DeepThink</strong>. Holder of <strong className="text-foreground">several patents</strong> driving innovation in <strong className="text-foreground">Gemini</strong>—shaping the future of AI reasoning and intelligence.
+                Pioneer of <strong className="text-foreground">instruction-tuning</strong> through the <strong className="text-foreground">"Natural Instructions"</strong> paper. Built the model powering the <strong className="text-foreground">IMO 2024 Silver Medal</strong> performance and the foundational technology behind <strong className="text-foreground">Gemini DeepThink</strong>. Foundational work in <strong className="text-foreground">reasoning</strong>, <strong className="text-foreground">prompt programming</strong> and <strong className="text-foreground">model self-improvement</strong>—shaping the future of AI intelligence.
               </p>
             </div>
 
