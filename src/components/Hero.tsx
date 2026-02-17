@@ -31,7 +31,7 @@ const Hero = () => {
             
             <div className="animate-fade-up-delay-1">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-                Pioneer of <strong className="text-foreground">instruction tuning</strong> through the <strong className="text-foreground">Natural Instructions</strong> paper. Drove foundational innovations in <strong className="text-foreground">reasoning</strong>, <strong className="text-foreground">prompt programming</strong>, and <strong className="text-foreground">model self-improvement</strong>, influencing the trajectory of modern AI intelligence. Built the model that led to the <strong className="text-foreground">IMO 2024 Silver Medal</strong>, laying the foundation for an <strong className="text-foreground">IMO 2025 Gold</strong> and <strong className="text-foreground">Gemini DeepThink</strong>.
+                Pioneer of <strong className="text-foreground">instruction tuning</strong> through the <strong className="text-foreground">Natural Instructions</strong> paper. Drove foundational innovations in <strong className="text-foreground">reasoning</strong>, <strong className="text-foreground">prompt programming</strong>, and <strong className="text-foreground">model self-improvement</strong>, influencing the trajectory of modern AI intelligence. Built the model that strongly contributed to the <strong className="text-foreground">IMO 2024 Silver Medal</strong>, laying the foundation for an <strong className="text-foreground">IMO 2025 Gold</strong> and <strong className="text-foreground">Gemini DeepThink</strong>.
               </p>
             </div>
 
