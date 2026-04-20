@@ -15,10 +15,10 @@ const photos = [
     image: photoBengio,
   },
   {
-    id: 2,
-    caption: "With Yoshua Bengio",
-    description: "Deep Learning Pioneer & Turing Award Winner",
-    image: photoBengio,
+    id: 3,
+    caption: "With Ilya Sutskever",
+    description: "Co-founder of OpenAI",
+    image: photoIlya,
   },
   {
     id: 3,
