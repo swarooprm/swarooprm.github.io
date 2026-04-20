@@ -27,10 +27,10 @@ const photos = [
     image: photoYejin,
   },
   {
-    id: 4,
-    caption: "With Yejin Choi",
-    description: "MacArthur Fellow & AI Researcher",
-    image: photoYejin,
+    id: 5,
+    caption: "With Sara Hooker & Danqi Chen",
+    description: "ACL 2023 Panel Discussion",
+    image: photoSaraDanqi,
   },
   {
     id: 5,
