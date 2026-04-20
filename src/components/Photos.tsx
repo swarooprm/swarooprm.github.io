@@ -33,10 +33,10 @@ const photos = [
     image: photoSaraDanqi,
   },
   {
-    id: 5,
-    caption: "With Sara Hooker & Danqi Chen",
-    description: "ACL 2023 Panel Discussion",
-    image: photoSaraDanqi,
+    id: 6,
+    caption: "At MIT",
+    description: "Invited Talk 2024",
+    image: photoMit,
   },
   {
     id: 6,
