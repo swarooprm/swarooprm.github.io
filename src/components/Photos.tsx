@@ -38,12 +38,6 @@ const photos = [
     description: "Invited Talk 2024",
     image: photoMit,
   },
-  {
-    id: 6,
-    caption: "At MIT",
-    description: "Invited Talk 2024",
-    image: photoMit,
-  },
 ];
 
 const Photos = () => {
