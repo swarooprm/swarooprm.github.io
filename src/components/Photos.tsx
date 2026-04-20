@@ -21,10 +21,10 @@ const photos = [
     image: photoIlya,
   },
   {
-    id: 3,
-    caption: "With Ilya Sutskever",
-    description: "Co-founder of OpenAI",
-    image: photoIlya,
+    id: 4,
+    caption: "With Yejin Choi",
+    description: "MacArthur Fellow & AI Researcher",
+    image: photoYejin,
   },
   {
     id: 4,
