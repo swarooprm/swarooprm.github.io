@@ -9,10 +9,10 @@ import photoHinton from "@/assets/photo-hinton.png";
 
 const photos = [
   {
-    id: 1,
-    caption: "With Geoffrey Hinton",
-    description: "AI Pioneer, Turing Award & Nobel Prize Winner",
-    image: photoHinton,
+    id: 2,
+    caption: "With Yoshua Bengio",
+    description: "Deep Learning Pioneer & Turing Award Winner",
+    image: photoBengio,
   },
   {
     id: 2,
